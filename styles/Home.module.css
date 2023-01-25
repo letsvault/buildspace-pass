@@ -1,0 +1,97 @@
+.container {
+  padding: 2rem;
+}
+
+.main {
+  padding: 4rem 0 0 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.engageButton {
+  height: 30px;
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.engageButtonAndLogo {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.signinOption {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+@media (max-width: 400px) {
+  .signinOption {
+    width: 100%;
+    flex-direction: column;
+  }
+} 
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginButton {
+  height: 50px;
+  padding: 0 3rem;
+  background-color: #537FE7;
+  font-size: medium;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.howItWorksButton {
+  background: transparent;
+  font-size: medium;
+  margin-left: 2rem;
+}
+
+.createWalletForm {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 4px;
+  border-radius: 1.5rem;
+  margin-top: 60px;
+}
+
+.createWalletInput {
+  flex-grow: 2;
+  border: none;
+  background: transparent;
+  margin: 2px 4px;
+  color: grey;
+}
+
+.createWalletInput:focus {
+  outline: none;
+}
+
+.createWalletButton {
+  display: flex;
+  align-items: center;
+  background-color: #537FE7;
+  height: 2rem;
+  padding: 1rem;
+}
+
+
+
