@@ -1,6 +1,5 @@
 import React from 'react';
-import { profilesData } from "./profiles"
-
+import { profilesData } from "./profiles";
 
 
 class ProfilesPlate extends React.Component {
