@@ -1,9 +1,9 @@
 .connectColumns {
     display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap; 
-    max-height: 700px; 
-    max-width: 0%
+    /* flex-direction: column;  */
+    /* flex-wrap: wrap;  */
+    /* max-height: 700px;  */
+    /* max-width: 0% */
 }
 
 
@@ -17,7 +17,6 @@
     width: 300px;
     border: 3px solid white;
     border-radius: 1.5rem;
-    margin: 0px 10px 10px 0px;
 }
 
 .builtWith {
@@ -33,7 +32,7 @@
     border:3px solid white; 
     border-radius: 1.5rem;
     color: white;
-    margin: 0px 10px 10px 0px;
+    margin: 0px 0px 0px 20px;
   }
 
   .appButton:hover .builtWith{

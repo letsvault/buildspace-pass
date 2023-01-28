@@ -33,7 +33,18 @@
 .signinOption {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  height: 8rem;
+  width: 30rem;
+  /* background-color: #8AD2FD; */
+  border-radius: 1.5rem;
+  padding: 1rem;
+  color: white;
+  justify-content: space-between;
+  border: 3px solid white;
+  margin: 1rem;
+
+  /* flex-direction: column;
+  width: 40%; */
 }
 
 @media (max-width: 400px) {
@@ -43,19 +54,40 @@
   }
 } 
 
+.signinOptionTitle {
+  margin: 0px;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.loginComponent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
 .loginButton {
-  height: 50px;
+  height: 2rem;
   padding: 0 3rem;
   background-color: #537FE7;
   font-size: medium;
   font-weight: 700;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
+}
+
+.mintNftButton {
+  height: 2rem;
+  padding: 0 3rem;
+  background-color: #537FE7;
+  font-size: medium;
+  font-weight: 700;
+  width: 30%;
+  color: white;
 }
 
 .howItWorksButton {
@@ -70,7 +102,9 @@
   background-color: white;
   padding: 4px;
   border-radius: 1.5rem;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  align-items: center;
+  height: 2rem;
 }
 
 .createWalletInput {

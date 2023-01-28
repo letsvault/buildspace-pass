@@ -122,56 +122,46 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <header>
-        <nav className={styles.navBar}>
-          <div className={styles.headerLogo}>
-          <Image width={50} height={50} src="/favicon.ico" alt="access pass logo"></Image>
-          </div>
-          <div className={styles.navButtons}>
-            {/* UNCOMMENT ONCE HOW IT WORKS IS LIVE */}
-            {/* <button className={styles.howItWorksButton}>
-              How it works
-            </button> */}
-            <LoginWithPaper 
-              onSuccess={async (code: string) => {
-                setUserCode(code);
-                exchangeCodeForToken(code);
-              }}>
-                {/* @ts-ignore */}
-                <button className={styles.loginButton}>{currentPage === Page.LOGIN ? "Login" : "Logged In"}</button>
-             </LoginWithPaper> 
-          </div>
-        </nav>
       </header>
       <main className={styles.main}>
         {currentPage === Page.LOGIN && (
-          <h1>Get Your <span style={{color: "#537FE7"}}>University Alumni </span>Access Pass</h1>
+          <div>
+            <h1 style={{'marginBottom':'.5rem'}}>buildspace <span style={{color: "#537FE7"}}>nights + weekends s2 </span></h1>
+            <h2 style={{'marginTop':'0px'}}>Builder Pass</h2>
+          </div>
         )}
 
         {loggingIn && (
-          <h2>Retreiving your Access Pass...</h2>
+          <h2>Retreiving your Builder Pass...</h2>
         )}
 
         {!loggingIn && currentPage === Page.LOGIN && (
-          <Login
-            email={email} 
-            setEmail={setEmail} 
-            creatingWallet={creatingWallet} 
-            setCreatingWallet={setCreatingWallet} 
-            recipientWalletAddress={recipientWalletAddress}
-            setRecipientWalletAddress={setRecipientWalletAddress}
-            setUserCode={setUserCode} 
-            exchangeCodeForToken={exchangeCodeForToken}
-            setCurrentPage={setCurrentPage}/>
+          <div>
+            <Login
+              email={email} 
+              setEmail={setEmail} 
+              creatingWallet={creatingWallet} 
+              setCreatingWallet={setCreatingWallet} 
+              recipientWalletAddress={recipientWalletAddress}
+              setRecipientWalletAddress={setRecipientWalletAddress}
+              setUserCode={setUserCode} 
+              exchangeCodeForToken={exchangeCodeForToken}
+              setCurrentPage={setCurrentPage}/>
+              <GlobeAnim />
+            </div>
+
         )}
 
         {currentPage === Page.CLAIM_NEW_PASS && (
           <>
-            <h2>Hi, Alum! 👋 </h2>
+            <h2>Hi, builder! 👋 </h2>
             <button 
-              onClick={() => mintNft()}
+              className={styles.mintNftButton}
+              // Change back to mintNft() 
+              onClick={() => setCurrentPage(Page.VIEW_PASS)}
               disabled={mintedNft !== null}
             >
-                {minting ? ("Loading...") : ("Get Your Access Pass")}
+                {minting ? ("Loading...") : ("Get Your Builder Pass")}
             </button>
           </>
         )}
@@ -184,10 +174,6 @@ const Home: NextPage = () => {
         </div>
         )}
 
-        <div style={{marginTop: '20px'}}>
-          <p>If you have any issues {currentPage === Page.LOGIN ? "claiming or " : ""} connecting, reach out to us at team@letsvault.xyz.</p>
-        </div>
-        <GlobeAnim />
       </main>
     </div>
   );

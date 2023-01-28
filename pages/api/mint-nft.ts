@@ -38,7 +38,7 @@ export default async function handler(
             const contractAddress = process.env.CONTRACT_ADDRESS as string;
             const contract = await sdk.getContract(contractAddress, "edition-drop");
 
-            const tokenId = 1;
+            const tokenId = 3;
             const quantity = 1;
             
             await contract.claimTo(recipientWalletAddress as string, tokenId, quantity);

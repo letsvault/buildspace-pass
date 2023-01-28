@@ -1,5 +1,7 @@
 import { NFTMetadata } from "@thirdweb-dev/sdk";
 import { ThirdwebNftMedia } from "@thirdweb-dev/react";
+import  Image  from "next/image"
+
 
 import styles from "../styles/Connect.module.css";
 
@@ -35,51 +37,29 @@ const Connect = (props: connectProps) => {
             size: "small",
             tagline: "Join the conversation",
             builtWith: "Discord",
-            link: "https://discord.gg/5GXRS5Bp8R",
+            link: "",
         },
         {
             size: "small",
-            tagline: "Connect with local alums",
+            tagline: "Find local events",
             builtWith: "LittleAtlas",
             link: "",
         },
         {
             size: "small",
-            tagline: "Find a new career",
+            tagline: "Check out our job board",
             builtWith: "Console",
             link: "",
         },
-        {
-            size: "small",
-            tagline: "Audit online classes",
-            builtWith: "LinkU Stream",
-            link: "",
-        },
-        {
-            size: "small",
-            tagline: "Give back",
-            builtWith: "LinkU Give",
-            link: "",
-        },
-        {
-            size: "small",
-            tagline: "Get updates from ExampleU",
-            builtWith: "XMTP",
-            link: "",
-        }
     ];
 
     return (
-        <div>
-            <h1>Example University</h1>
+        <div style={{'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center'}}>
+            <h1>buildspace nights + weekends</h1>
+            <div style={{'border': '3px solid white', 'borderRadius' : '1.5rem', 'height': '300px', 'width': '400px', 'margin': '0px 0px 20px 20px'}}>
+                <Image height={300} width={400} style={{'borderRadius' : '1.5rem'}}src="/builderpass.png" alt="builder pass" ></Image>
+            </div>
             <div className={styles.connectColumns}>
-                    {props?.mintedNft !== null ? 
-                        <ThirdwebNftMedia 
-                        className={styles.nftStyle}
-                        metadata={props.mintedNft} />
-                    : {}
-                    }
-                    
                     {applications.map((application => {
                         return (
                             <SingleApp 

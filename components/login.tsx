@@ -34,9 +34,16 @@ const Login = (props: loginProps) => {
 
     return (
         <>
-            <div className="loginComponent" style={{display:'flex', justifyContent: 'space-between'}}>
+            <div className={styles.loginComponent}>
               <div className={styles.signinOption}>
-                <form className={styles.createWalletForm}>
+                <div>
+                  <h3 className={styles.signinOptionTitle}>Get yours here (2 steps)</h3>
+                  <ul>
+                    <li>Register</li>
+                    <li>Claim</li>
+                  </ul>
+                </div>
+                <div className={styles.createWalletForm}>
                 <input 
                   className={styles.createWalletInput}
                   type="email"
@@ -60,10 +67,21 @@ const Login = (props: loginProps) => {
                       className={styles.createWalletButton}
                       disabled={!email || creatingWallet}
                     >
-                    {creatingWallet ? ('Loading...') : ('First time here')}
+                    {creatingWallet ? ('Loading...') : ('Submit')}
                     </button>
                   </CreateWallet>
-                </form>
+                </div>
+              </div>
+              <div className={styles.signinOption}>
+              <h3 className={styles.signinOptionTitle}>Been here before?</h3>
+              <LoginWithPaper 
+              onSuccess={async (code: string) => {
+                setUserCode(code);
+                exchangeCodeForToken(code);
+              }}>
+                {/* @ts-ignore */}
+                <button className={styles.loginButton}>Log In</button>
+             </LoginWithPaper> 
               </div>
             </div>
             {creatingWallet && !recipientWalletAddress ? (<h3>First time here? Check your email inbox!</h3>) : ("")}
