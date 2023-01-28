@@ -1,7 +1,7 @@
 export const profilesData = [
   {
     name: "Ashish K.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "New York City",
     cityLabel: "NewYorkCity",
     cityCoorditates: {
@@ -11,9 +11,7 @@ export const profilesData = [
     country: "USA",
     fotoUrl: "./img/Ashish K.jpg",
     accessPass: [
-      "Alumni",
-      "School of Business",
-      "Honor Grad",
+      "n+w s1"
     ],
     currentRole: "Musician",
     interests: "Hiking, Martial arts",
@@ -26,7 +24,7 @@ export const profilesData = [
   // Samira H.
   {
     name: "Samira H.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Des Moines",
     cityLabel: "DesMoines",
     cityCoorditates: {
@@ -36,9 +34,7 @@ export const profilesData = [
     country: "USA",
     fotoUrl: "./img/Samira H.jpg",
     accessPass: [
-      "Alumni",
-      "School of Arts and Sciences",
-      // "Honor Grad",
+      "n+w s2"
     ],
     currentRole: "Journalist",
     interests: "web3, Jewelry-making",
@@ -52,7 +48,7 @@ export const profilesData = [
   // Harper R.
   {
     name: "Harper R.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Lima",
     cityLabel: "Lima",
     cityCoorditates: {
@@ -62,9 +58,7 @@ export const profilesData = [
     country: "Peru",
     fotoUrl: "./img/Harper R.jpg",
     accessPass: [
-      "Alumni",
-      "School of Medicine",
-      "Honor Grad",
+      "n+w s1"
     ],
     currentRole: "Doctor",
     interests: "Sneakerhead, WWI history",
@@ -77,7 +71,7 @@ export const profilesData = [
   // Jamie V.
   {
     name: "Jamie V.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "London",
     cityLabel: "London",
     cityCoorditates: {
@@ -87,9 +81,7 @@ export const profilesData = [
     country: "UK",
     fotoUrl: "./img/Jamie V.jpg",
     accessPass: [
-      "Alumni",
-      "School of Arts and Sciences",
-      // "Honor Grad",
+      "n+w s2"
     ],
     currentRole: "Hospital Administrator",
     interests: "Fiction books, Top 40 music",
@@ -102,7 +94,7 @@ export const profilesData = [
   // Morgan M.
   {
     name: "Morgan M.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Brno",
     cityLabel: "Brno",
     cityCoorditates: {
@@ -112,9 +104,7 @@ export const profilesData = [
     country: "Czechya",
     fotoUrl: "./img/Morgan M.jpg",
     accessPass: [
-      "Alumni",
-      "School of Business",
-      // "Honor Grad",
+      "n+w s1"
     ],
     currentRole: "Sales Lead",
     interests: "Theater, EDM",
@@ -127,7 +117,7 @@ export const profilesData = [
   // Dani S.
   {
     name: "Dani S.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Singapore",
     cityLabel: "Singapore",
     cityCoorditates: {
@@ -137,9 +127,7 @@ export const profilesData = [
     country: "Singapore",
     fotoUrl: "./img/Dani S.jpg",
     accessPass: [
-      "Alumni",
-      "School of Engineering",
-      "Student Athlete",
+      "n+w s2"
     ],
     currentRole: "Web Design",
     interests: "Mountaineering, RomComs",
@@ -152,7 +140,7 @@ export const profilesData = [
   // Alex A.
   {
     name: "Alex A.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "New Delhi",
     cityLabel: "NewDelhi",
     cityCoorditates: {
@@ -162,9 +150,7 @@ export const profilesData = [
     country: "India",
     fotoUrl: "./img/Alex A.jpg",
     accessPass: [
-      "Alumni",
-      "School of Environmental Studies",
-      // "Student Athlete",
+      "n+w s1"
     ],
     currentRole: "Horticulturalist",
     interests: "Fantasy movies, No-code development",
@@ -177,7 +163,7 @@ export const profilesData = [
   // Itsuki T.
   {
     name: "Itsuki T.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Doha",
     cityLabel: "Doha",
     cityCoorditates: {
@@ -187,9 +173,7 @@ export const profilesData = [
     country: "Qatar",
     fotoUrl: "./img/Itsuki T.jpg",
     accessPass: [
-      "Alumni",
-      "School of Business",
-      "Student Athlete",
+      "n+w s2"
     ],
     currentRole: "Consulting",
     interests: "Ultradistance running, Tea",
@@ -202,7 +186,7 @@ export const profilesData = [
   // Nikolai N.
   {
     name: "Nikolai N.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Lagos",
     cityLabel: "Lagos",
     cityCoorditates: {
@@ -212,9 +196,7 @@ export const profilesData = [
     country: "Nigeria",
     fotoUrl: "./img/Nikolai N.jpg",
     accessPass: [
-      "Alumni",
-      "School of Arts and Sciences",
-      // "Student Athlete",
+      "n+w s1"
     ],
     currentRole: "Startup Founder",
     interests: "Archery, Dog rescue",
@@ -227,7 +209,7 @@ export const profilesData = [
   // Noah W.
   {
     name: "Noah W.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Pretoria",
     cityLabel: "Pretoria",
     cityCoorditates: {
@@ -237,9 +219,7 @@ export const profilesData = [
     country: "South Africa",
     fotoUrl: "./img/Noah W.jpg",
     accessPass: [
-      "Alumni",
-      "School of Engineering",
-      // "Student Athlete",
+      "n+w s2"
     ],
     currentRole: "Musician",
     interests: "Basketball, Zoology",
@@ -252,7 +232,7 @@ export const profilesData = [
   // Olivia B.
   {
     name: "Olivia B.",
-    status: "Access Passes ",
+    status: "Access Pass ",
     city: "Brisbane",
     cityLabel: "Brisbane",
     cityCoorditates: {
@@ -262,9 +242,7 @@ export const profilesData = [
     country: "Australia",
     fotoUrl: "./img/Olivia B.jpg",
     accessPass: [
-      "Alumni",
-      "School of Engineering",
-      "Honor Grad",
+      "n+w s1"
     ],
     currentRole: "Civil Engineer",
     interests: "Surfing, Scuba",
