@@ -1,6 +1,6 @@
 import { NFTMetadata } from "@thirdweb-dev/sdk";
 import { ThirdwebNftMedia } from "@thirdweb-dev/react";
-import  Image  from "next/image"
+import  Image  from "next/image";
 
 
 import styles from "../styles/Connect.module.css";
